@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .Titulo {
+            font-weight: bold;
+        }
+        pre {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            overflow: auto;
+        }
+        .resultado {
+            margin-top: 20px;
+            color: red;
+        }
+        .ejercicio {
+            background-color: #e6f7ff; /* Color azul claro para todos los divs */
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .ejercicio .Titulo {
+            color: #0000ff; /* Color azul para los Parrafos de los Titulos */
+        }
+        .ejercicio pre {
+            color: #000000; /* Color negro para el código */
+        }
+        .ejercicio .resultado {
+            color: red; /* Color rojo para los resultados */
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <div class="ejercicio">
+        <p class="Titulo">1. ESTRUCTURA INTERNA DE UNA PÁGINA HTML</p>
+        <p>Ejemplo: Confeccionar una página que muestre los nombres de 5 lenguajes de programación separados por un guión.</p>
+        <p>Código que resuelve el ejercicio:</p>
+        <pre>
+
+&lt;body&gt;
+    &lt;p&gt;Python - JavaScript - Java - C++ - PHP&lt;/p&gt;
+&lt;/body&gt;
+
+        </pre>
+
+        <div class="resultado">
+            <p>Resultado:</p>
+            <p>Python - JavaScript - Java - C++ - PHP</p>
+            
+        </div>
+    </div>
+    <div class="ejercicio">
+        <p class="Titulo">2. SALTO DE LÍNEA &lt;BR&gt;</p>
+        <p>Ejemplo: Confeccionar una página HTML que muestre distintos lenguajes de programación, mostrarlos uno por línea.</p>
+        <p>Código que resuelve el ejercicio:</p>
+        <pre>
+            
+&lt;body&gt;
+    &lt;p&gt;Python&lt;br&gt;
+    JavaScript&lt;br&gt;
+    Java&lt;br&gt;
+    C++&lt;br&gt;
+    PHP&lt;/p&gt;
+&lt;/body&gt;
+
+        </pre>
+
+        <div class="resultado">
+            <p>Resultado:</p>
+            <p>
+                Python<br>
+                JavaScript<br>
+                Java<br>
+                C++<br>
+                PHP
+            </p>
+        </div>
+    </div>
+    <div class="ejercicio">
+        <p class="Titulo">3. PÁRRAFO &lt;P&gt;</p>
+        <p>Ejemplo: Confeccione una página que muestre dos párrafos. En el primero agregar varios saltos de línea.</p>
+        <p>Código que resuelve el ejercicio:</p>
+        <pre>
+   
+    &lt;body&gt;
+        &lt;p&gt;
+            Este es el primer párrafo.&lt;br&gt;&lt;br&gt;
+            Holaaaaaaaaaaaaaaaaaaaaa.&lt;br&gt;&lt;br&gt;
+            Mundoooooooooooooooooooo.
+        &lt;/p&gt;
+        &lt;p&gt;Este es el segundo párrafo.&lt;/p&gt;
+    &lt;/body&gt;
+
+        </pre>
+    
+        <div class="resultado">
+            <p>Resultado:</p>
+            <p>
+                Este es el primer párrafo.<br><br>
+                Holaaaaaaaaaaaaaaaaaaaaa.<br><br>
+                Mundoooooooooooooooooooo.
+            </p>
+            <p>Este es el segundo párrafo.</p>
+        </div>
+    </div>
+    <div class="ejercicio">
+        <p class="Titulo">4. TÍTULOS &lt;H1 – H6&gt;</p>
+        <p>Ejemplo: Confeccionar una página que contenga un título de primer nivel &lt;h1&gt; y luego dos títulos de nivel &lt;h2&gt;. Definir un párrafo para cada título de segundo nivel.</p>
+        <p>Código que resuelve el ejercicio:</p>
+        <pre>
+   
+    &lt;body&gt;
+        &lt;h1&gt;Título de Primer Nivel&lt;/h1&gt;
+        &lt;h2&gt;Título de Segundo Nivel 1&lt;/h2&gt;
+        &lt;p&gt;Este es el párrafo correspondiente al primer título de segundo nivel.&lt;/p&gt;
+        &lt;h2&gt;Título de Segundo Nivel 2&lt;/h2&gt;
+        &lt;p&gt;Este es el párrafo correspondiente al segundo título de segundo nivel.&lt;/p&gt;
+    &lt;/body&gt;
+
+        </pre>
+    
+        <div class="resultado">
+            <p>Resultado:</p>
+            <h1>Título de Primer Nivel</h1>
+            <h2>Título de Segundo Nivel 1</h2>
+            <p>Este es el párrafo correspondiente al primer título de segundo nivel.</p>
+            <h2>Título de Segundo Nivel 2</h2>
+            <p>Este es el párrafo correspondiente al segundo título de segundo nivel.</p>
+        </div>
+    </div>
+    <div class="ejercicio">
+        <p class="Titulo">5. ÉNFASIS &lt;EM&gt; &lt;STRONG&gt;</p>
+        <p>Ejemplo: Crear una página que contenga cuatro párrafos. En el primero enfatizar con el máximo nivel y en los otros párrafos emplear el elemento de enfatizar de menor fuerza.</p>
+        <p>Código que resuelve el ejercicio:</p>
+        <pre>
+
+    &lt;body&gt;
+        &lt;p&gt;&lt;strong&gt;Este es el primer párrafo con énfasis de máximo nivel.&lt;/strong&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;em&gt;Este es el segundo párrafo con énfasis de menor fuerza.&lt;/em&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;em&gt;Este es el tercer párrafo con énfasis de menor fuerza.&lt;/em&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;em&gt;Este es el cuarto párrafo con énfasis de menor fuerza.&lt;/em&gt;&lt;/p&gt;
+    &lt;/body&gt;
+        </pre>
+    
+        <div class="resultado">
+            <p>Resultado:</p>
+            <p><strong>Este es el primer párrafo con énfasis de máximo nivel.</strong></p>
+            <p><em>Este es el segundo párrafo con énfasis de menor fuerza.</em></p>
+            <p><em>Este es el tercer párrafo con énfasis de menor fuerza.</em></p>
+            <p><em>Este es el cuarto párrafo con énfasis de menor fuerza.</em></p>
+        </div>
+    </div>
+    <div class="ejercicio">
+        <p class="Titulo">6. HIPERVÍNCULO A OTRA PÁGINA DEL MISMO SITIO &lt;A&gt;</p>
+        <p>Ejemplo: Confeccionar una página principal que tenga un hipervínculo a otra página secundaria. La página secundaria debe tener también un hipervínculo a la página principal.</p>
+        <p>Código que resuelve el ejercicio:</p>
+        <pre>
+    &lt;!-- Página principal (index.html) --&gt;
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang=&quot;es&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+        &lt;title&gt;Página Principal&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Página Principal&lt;/h1&gt;
+        &lt;p&gt;Esta es la página principal. Haga clic en el enlace para ir a la página secundaria.&lt;/p&gt;
+        &lt;a href=&quot;secundaria.html&quot;&gt;Ir a la Página Secundaria&lt;/a&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    
+    &lt;!-- Página secundaria (secundaria.html) --&gt;
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang=&quot;es&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+        &lt;title&gt;Página Secundaria&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Página Secundaria&lt;/h1&gt;
+        &lt;p&gt;Esta es la página secundaria. Haga clic en el enlace para volver a la página principal.&lt;/p&gt;
+        &lt;a href=&quot;index.html&quot;&gt;Volver a la Página Principal&lt;/a&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+        </pre>
+    
+        <div class="resultado">
+            <p>Resultado:</p>
+            <h1>Página Principal</h1>
+            <p>Esta es la página principal. Haga clic en el enlace para ir a la página secundaria.</p>
+            <a href="secundaria.html">Ir a la Página Secundaria</a>
+            <br>
+            <a href="Practica2.html">Volver a la Pagina Principal de la Practica2</a>
+            <hr>
+            <h1>Página Secundaria</h1>
+            <p>Esta es la página secundaria. Haga clic en el enlace para volver a la página principal.</p>
+            <a href="index.html">Volver a la Página Principal</a>
+        </div>
+    </div>
+    <div class="ejercicio">
+        <p class="Titulo">7. HIPERVÍNCULO A OTRO SITIO DE INTERNET &lt;A&gt;</p>
+        <p>Ejemplo: Confeccionar una página que contenga un enlace al sitio de Google.</p>
+        <p>Código que resuelve el ejercicio:</p>
+        <pre>
+   
+    &lt;body&gt;
+        &lt;p&gt;Haga clic en el siguiente enlace para ir a Google:&lt;/p&gt;
+        &lt;a href=&quot;https://www.google.com&quot; target=&quot;_blank&quot;&gt;Ir a Google&lt;/a&gt;
+    &lt;/body&gt;
+        </pre>
+    
+        <div class="resultado">
+            <p>Resultado:</p>
+            <p>Haga clic en el siguiente enlace para ir a Google:</p>
+            <a href="https://www.google.com" target="_blank">Ir a Google</a>
+        </div>
+    </div>
+    <div class="ejercicio">
+        <p class="Titulo">8. HIPERVÍNCULO A UN CLIENTE DE CORREO &lt;A&gt;</p>
+        <p>Ejemplo: Confeccionar una página que contenga un hipervínculo configurando la propiedad href de tal manera que abra un cliente de correo.</p>
+        <p>Código que resuelve el ejercicio:</p>
+        <pre>
+
+    &lt;body&gt;
+        &lt;p&gt;Haga clic en el siguiente enlace para abrir su cliente de correo predeterminado:&lt;/p&gt;
+        &lt;a href=&quot;mailto:correo@ejemplo.com&quot;&gt;Enviar un correo electrónico&lt;/a&gt;
+    &lt;/body&gt;
+  
+        </pre>
+    
+        <div class="resultado">
+            <p>Resultado:</p>
+            <p>Haga clic en el siguiente enlace para abrir su cliente de correo predeterminado:</p>
+            <a href="mailto:correo@ejemplo.com">Enviar un correo electrónico</a>
+        </div>
+    </div>
+    <div class="ejercicio">
+        <p class="Titulo">9. ANCLAS DE PÁGINA</p>
+        <p>Ejemplo: Confeccionar una página que contenga cuatro anclas, luego definir cuatro hipervínculos que se enlacen con dichas anclas.</p>
+        <p>Código que resuelve el ejercicio:</p>
+        <pre>
+   
+    &lt;body&gt;
+        &lt;h1&gt;Secciones de la Página&lt;/h1&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;#seccion1&quot;&gt;Ir a Sección 1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#seccion2&quot;&gt;Ir a Sección 2&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#seccion3&quot;&gt;Ir a Sección 3&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#seccion4&quot;&gt;Ir a Sección 4&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    
+        &lt;h2 id=&quot;seccion1&quot;&gt;Sección 1&lt;/h2&gt;
+        &lt;p&gt;Contenido de la Sección 1...&lt;/p&gt;
+    
+        &lt;h2 id=&quot;seccion2&quot;&gt;Sección 2&lt;/h2&gt;
+        &lt;p&gt;Contenido de la Sección 2...&lt;/p&gt;
+    
+        &lt;h2 id=&quot;seccion3&quot;&gt;Sección 3&lt;/h2&gt;
+        &lt;p&gt;Contenido de la Sección 3...&lt;/p&gt;
+    
+        &lt;h2 id=&quot;seccion4&quot;&gt;Sección 4&lt;/h2&gt;
+        &lt;p&gt;Contenido de la Sección 4...&lt;/p&gt;
+    
+        &lt;p&gt;&lt;a href=&quot;#top&quot;&gt;Volver al inicio&lt;/a&gt;&lt;/p&gt;
+    &lt;/body&gt;
+    
+        </pre>
+    
+        <div class="resultado">
+            <p>Resultado:</p>
+            <h1>Secciones de la Página</h1>
+            <ul>
+                <li><a href="#seccion1">Ir a Sección 1</a></li>
+                <li><a href="#seccion2">Ir a Sección 2</a></li>
+                <li><a href="#seccion3">Ir a Sección 3</a></li>
+                <li><a href="#seccion4">Ir a Sección 4</a></li>
+            </ul>
+    
+            <h2 id="seccion1">Sección 1</h2>
+            <p>Contenido de la Sección 1...</p>
+    
+            <h2 id="seccion2">Sección 2</h2>
+            <p>Contenido de la Sección 2...</p>
+    
+            <h2 id="seccion3">Sección 3</h2>
+            <p>Contenido de la Sección 3...</p>
+    
+            <h2 id="seccion4">Sección 4</h2>
+            <p>Contenido de la Sección 4...</p>
+    
+            <p><a href="#top">Volver al inicio</a></p>
+        </div>
+    </div>
+    <div class="ejercicio">
+        <p class="Titulo">10. IMÁGENES DENTRO DE UNA PÁGINA &lt;IMG&gt;</p>
+        <p>Ejemplo: Implementar una página que muestre una imagen llamada foto1.jpg que se encuentra en el mismo servidor y en la misma carpeta donde se localiza el archivo HTML.</p>
+        <p>Código que resuelve el ejercicio:</p>
+        <pre>
+    
+    &lt;body&gt;
+        &lt;h1&gt;Imagen en Página&lt;/h1&gt;
+        &lt;p&gt;A continuación se muestra una imagen llamada foto1.jpg:&lt;/p&gt;
+        &lt;img src=&quot;foto1.jpg&quot; alt=&quot;Descripción de la imagen width="400" height="200"&quot;&gt;
+    &lt;/body&gt;
+   
+        </pre>
+    
+        <div class="resultado">
+            <p>Resultado:</p>
+            <h1>Imagen en Página</h1>
+            <p>A continuación se muestra una imagen llamada foto1.jpg:</p>
+            <img src="dadadan.png" alt="Imagen de dadadan" width="400" height="200">
+        </div>
+    </div>
+    <div class="ejercicio">
+        <p class="Titulo">11. HIPERVÍNCULO MEDIANTE UNA IMAGEN &lt;A&gt; Y &lt;IMG&gt;</p>
+        <p>Ejemplo: Confeccionar una página que muestre dos imágenes (foto1.jpg y foto2.jpg) como hipervínculos. Al ser presionados, llamar a otra página. Las imágenes se encuentran en una carpeta llamada imagenes que depende directamente de la raíz del sitio.</p>
+        <p>Código que resuelve el ejercicio:</p>
+        <pre>
+    
+    &lt;body&gt;
+        &lt;h1&gt;Hipervínculo con Imagen&lt;/h1&gt;
+        &lt;p&gt;Haga clic en las imágenes para navegar a otra página:&lt;/p&gt;
+        &lt;a href=&quot;paginasecundaria1.html&quot;&gt;
+            &lt;img src=&quot;imagenes/foto1.jpg&quot; alt=&quot;Foto 1 width="400" height="200"&quot;&gt;
+        &lt;/a&gt;
+        &lt;a href=&quot;paginasecundaria2.html&quot;&gt;
+            &lt;img src=&quot;imagenes/foto2.jpg&quot; alt=&quot;Foto 2 width="400" height="200"&quot;&gt;
+        &lt;/a&gt;
+    &lt;/body&gt;
+    
+        </pre>
+    
+        <div class="resultado">
+            <p>Resultado:</p>
+            <h1>Hipervínculo con Imagen</h1>
+            <p>Haga clic en las imágenes para navegar a otra página:</p>
+            <a href="https://es.wikipedia.org/wiki/Dandadan">
+                <img src="dadadan.png" alt="Foto 1" width="400" height="200">
+            </a>
+            <a href="https://es.wikipedia.org/wiki/To_Love-Ru">
+                <img src="toloveru.jpg" alt="Foto 2" width="400" height="200">
+            </a>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
